@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Estilo CSS -->
+    <style>
+        label{
+            display: block;
+        }
+        div{
+            margin-bottom: 15px;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <!-- Formulario creación de cuenta -->
+    <form id="formCreateAccount" action="ejercicio01-Rec.html" method="post">
+
+        <!-- Titulo de Formulario -->
+        <h2>Crear su cuenta</h2>
+
+        <div> 
+            <label for="txtName">Nombre:</label>
+            <input type="text" name="firstname" id="txtName" maxlength="50" required>
+        </div>
+
+        <div>
+            <label for="txtLastName">Apellidos:</label>
+            <input type="text" name="lastname" id="txtLastName" maxlength="50" required>
+        </div>
+
+        <div> 
+            <label for="intDNI">dni:</label>
+            <input type="number" name="dni" id="intDNI" maxlength="8" required>  
+        </div>   
+        
+        <div> 
+            <label for="txtEmail">Correo electronico:</label>
+            <input type="email" name="email" id="txtEmail" maxlength="100" required>  
+        </div> 
+
+        <div> 
+            <label for="intFecNac">Fecha de nacimiento:</label>
+            <input type="date" name="fecnac" id="intFecNac" min="1970-01-01" max="2005-12-31" required>  
+        </div> 
+
+
+        <div> 
+            <p>Sexo</p>
+            <input type="radio" name="sexo" id="bolmasculino" value="m" checked>
+            <label for="bolmasculino" style="display:inline-block">Masculino</label>
+            <br>
+            <input type="radio" name="sexo" id="bolfemenino" value="f">
+            <label for="bolfemenino" style="display:inline-block">Femenino</label>
+
+        </div> 
+
+
+        <div> 
+            <label for="txtUser">Usuario:</label>
+            <input type="text" name="user" id="txtUser" required>  
+        </div> 
+
+        <div> 
+            <label for="txtPassword">Contraseña:</label>
+            <input type="password" name="user" id="txtPassword"required>  
+        </div> 
+
+        <div> 
+            <label for="intPhone">Telefono/Celular:</label>
+            <input type="tel" name="phone" id="intPhone" maxlength="13" required>  
+        </div> 
+
+        <div> 
+            <label for="txtAddress1">Dirección:</label>
+            <input type="text" name="address1" id="txtAddress1"><br>
+            <input type="text" name="address2" id="txtAddress2">  
+        </div> 
+
+        <!-- Aceopta condiciones -->
+        <div>
+            <input type="checkbox" name="" id="bolAceptar">
+            <label style="display:inline-block" for="bol">Acepta las <a href="#">condiciones</a>  para crear</label>
+        </div>
+        <!-- Boton Enviar -->
+        <div>
+            <button type="submit" value="Enviar">Enviar</button>
+        </div>
+
+    </form>
+
+</body>
+</html>
